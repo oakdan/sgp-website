@@ -29,7 +29,10 @@
     </div>
 
     <!--Javascript part-->
-    <script type="text/javascript">
+    <script type="module">
+      const externalCourses = await fetch('https://raw.githubusercontent.com/oakdan/sgp-website/main/courses.json');
+        const bla = await externalCourses.json();
+      console.log(bla);
       const courses = [
         {
           name: "Montag",
