@@ -1,10 +1,10 @@
 :root {
-    --soccerColor: #64B5F6;
-    --gymnasticsColor: #BA68C8;
-    --skiColor: #4DB6AC;
-    --cycleColor: #FFF176;
-    --volleyballColor: #E0E0E0;
-    --stickShootColor: #E57373;
+    --soccerColor: #BBDEFB;
+    --gymnasticsColor: #D7CCC8;
+    --skiColor: #B2DFDB;
+    --cycleColor: #F0F4C3;
+    --volleyballColor: #FFE0B2;
+    --stickShootColor: #FFCDD2;
   }
   
   .calendar {
