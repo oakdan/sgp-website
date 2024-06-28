@@ -9,7 +9,7 @@
       <div class="relative h-16 w-72 min-w-[200px] mb-4 ml-4">
         <select
           onchange="filterDepartment(event.target.value)"
-          class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 empty:!bg-gray-900 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+          class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-[14px] font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 empty:!bg-gray-900 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
         >
           <option value="Alle">Alle</option>
           <option value="Fußball">Fußball</option>
@@ -20,7 +20,7 @@
           <option value="Stockschießen">Stockschießen</option>
         </select>
         <label
-          class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+          class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[12px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
         >
           Abteilung auswählen
         </label>
@@ -29,172 +29,18 @@
     </div>
 
     <!--Javascript part-->
-    <script type="module">
-      const externalCourses = await fetch('https://raw.githubusercontent.com/oakdan/sgp-website/main/courses.json');
-        const bla = await externalCourses.json();
-      console.log(bla);
-      const courses = [
-        {
-          name: "Montag",
-          events: [
-            {
-              abteilung: "Turnen",
-              name: "Mutter-Kind-Turnen",
-              time: "16:15 - 17:15",
-            },
-            {
-              abteilung: "Turnen",
-              name: "Karate für Kinder",
-              time: "17:30 - 18:15",
-            },
-            {
-              abteilung: "Fußball",
-              name: "Damen",
-              time: "18:30 - 20:00",
-            },
-            {
-              abteilung: "Stockschießen",
-              name: "Frauen",
-              time: "19:00 - 21:00",
-            },
-            {
-              abteilung: "Skisport",
-              name: "Ski- und Konditionstraining",
-              time: "20:00 - 21:00",
-            },
-          ],
-        },
-        {
-          name: "Dienstag",
-          events: [
-            {
-              abteilung: "Fußball",
-              name: "E-Junioren",
-              time: "16:00 - 17:00",
-            },
-            {
-              abteilung: "Fußball",
-              name: "F-Junioren",
-              time: "17:00 - 18:30",
-            },
-            {
-              abteilung: "Fußball",
-              name: "A/B-Junioren",
-              time: "18:30 - 20:00",
-            },
-            {
-              abteilung: "Stockschießen",
-              name: "Herren",
-              time: "18:30 - 21:00",
-            },
-            {
-              abteilung: "Turnen",
-              name: "Damenturnen",
-              time: "20:00 - 21:30",
-            },
-          ],
-        },
-        {
-          name: "Mittwoch",
-          events: [
-            {
-              abteilung: "Turnen",
-              name: "TurnKids 1",
-              time: "15:00 - 16:00",
-            },
-            {
-              abteilung: "Fußball",
-              name: "G-Junioren",
-              time: "16:30 - 17:30",
-            },
-            {
-              abteilung: "Fußball",
-              name: "C-Junioren",
-              time: "17:30 - 19:00",
-            },
-            {
-              abteilung: "Turnen",
-              name: "Aerobic",
-              time: "19:00 - 20:00",
-            },
-            {
-              abteilung: "Fußball",
-              name: "AH",
-              time: "20:00 - 21:30",
-            },
-            {
-              abteilung: "Turnen",
-              name: "Pilates",
-              time: "20:00 - 21:30",
-            },
-          ],
-        },
-        {
-          name: "Donnerstag",
-          events: [
-          {
-              abteilung: "Fußball",
-              name: "D-Junioren",
-              time: "17:00 - 19:00",
-            },
-            {
-              abteilung: "Turnen",
-              name: "Seniorenturnen",
-              time: "19:00 - 20:00",
-            },
-            {
-              abteilung: "Turnen",
-              name: "Damenturnen",
-              time: "20:00 - 21:30",
-            },
-          ],
-        },
-        {
-          name: "Freitag",
-          events: [
-          {
-              abteilung: "Rad",
-              name: "MTB - Kids",
-              time: "15:00 - 16:00",
-            },
-            {
-              abteilung: "Turnen",
-              name: "Turn-Kids2",
-              time: "16:00 - 17:30",
-            },
-            {
-              abteilung: "Fußball",
-              name: "1. und 2. Mannschaft",
-              time: "17:30 - 20:30",
-            },
-            {
-              abteilung: "Stockschießen",
-              name: "Herren",
-              time: "18:30 - 21:00",
-            },
-            {
-              abteilung: "Volleyball",
-              name: "Boindara Bulln",
-              time: "20:30 - 22:00",
-            },
-          ],
-        },
-        {
-          name: "Samstag",
-          events: [
-          {
-              abteilung: "Turnen",
-              name: "Hula Hoop",
-              time: "10:00 - 11:00",
-            },
-            {
-              abteilung: "Turnen",
-              name: "Kids-Dance",
-              time: "13:30 - 14:30",
-            },
-          ],
-        },
-      ];
+    <script type="text/javaScript">
+         const daysContainer = document.getElementsByClassName("days")[0];
+         let courses = [];
+
+         fetch(
+            "https://raw.githubusercontent.com/oakdan/sgp-website/main/week-plan/courses.json"
+         ).then(response => {
+         response.json().then(json => {
+            courses = json;
+            showCourseOverview(json);
+         });
+      });
 
       const matchDepartmentToStyle = (department) => {
         switch (department) {
@@ -248,9 +94,6 @@
         daysContainer.innerHTML = "";
         daysContainer.innerHTML = dayElement;
       }
-
-      const daysContainer = document.getElementsByClassName("days")[0];
-      showCourseOverview(courses);
     </script>
   </body>
 </html>
