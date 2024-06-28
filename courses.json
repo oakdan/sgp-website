@@ -1,0 +1,162 @@
+[
+    {
+      "name": "Montag",
+      "events": [
+        {
+          "abteilung": "Turnen",
+          "name": "Mutter-Kind-Turnen",
+          "time": "16:15 - 17:15"
+        },
+        {
+          "abteilung": "Turnen",
+          "name": "Karate für Kinder",
+          "time": "17:30 - 18:15"
+        },
+        {
+          "abteilung": "Fußball",
+          "name": "Damen",
+          "time": "18:30 - 20:00"
+        },
+        {
+          "abteilung": "Stockschießen",
+          "name": "Frauen",
+          "time": "19:00 - 21:00"
+        },
+        {
+          "abteilung": "Skisport",
+          "name": "Ski- und Konditionstraining",
+          "time": "20:00 - 21:00"
+        }
+      ]
+    },
+    {
+      "name": "Dienstag",
+      "events": [
+        {
+          "abteilung": "Fußball",
+          "name": "E-Junioren",
+          "time": "16:00 - 17:00"
+        },
+        {
+          "abteilung": "Fußball",
+          "name": "F-Junioren",
+          "time": "17:00 - 18:30"
+        },
+        {
+          "abteilung": "Fußball",
+          "name": "A/B-Junioren",
+          "time": "18:30 - 20:00"
+        },
+        {
+          "abteilung": "Stockschießen",
+          "name": "Herren",
+          "time": "18:30 - 21:00"
+        },
+        {
+          "abteilung": "Turnen",
+          "name": "Damenturnen",
+          "time": "20:00 - 21:30"
+        }
+      ]
+    },
+    {
+      "name": "Mittwoch",
+      "events": [
+        {
+          "abteilung": "Turnen",
+          "name": "TurnKids 1",
+          "time": "15:00 - 16:00"
+        },
+        {
+          "abteilung": "Fußball",
+          "name": "G-Junioren",
+          "time": "16:30 - 17:30"
+        },
+        {
+          "abteilung": "Fußball",
+          "name": "C-Junioren",
+          "time": "17:30 - 19:00"
+        },
+        {
+          "abteilung": "Turnen",
+          "name": "Aerobic",
+          "time": "19:00 - 20:00"
+        },
+        {
+          "abteilung": "Fußball",
+          "name": "AH",
+          "time": "20:00 - 21:30"
+        },
+        {
+          "abteilung": "Turnen",
+          "name": "Pilates",
+          "time": "20:00 - 21:30"
+        }
+      ]
+    },
+    {
+      "name": "Donnerstag",
+      "events": [
+      {
+          "abteilung": "Fußball",
+          "name": "D-Junioren",
+          "time": "17:00 - 19:00"
+        },
+        {
+          "abteilung": "Turnen",
+          "name": "Seniorenturnen",
+          "time": "19:00 - 20:00"
+        },
+        {
+          "abteilung": "Turnen",
+          "name": "Damenturnen",
+          "time": "20:00 - 21:30"
+        }
+      ]
+    },
+    {
+      "name": "Freitag",
+      "events": [
+      {
+          "abteilung": "Rad",
+          "name": "MTB - Kids",
+          "time": "15:00 - 16:00"
+        },
+        {
+          "abteilung": "Turnen",
+          "name": "Turn-Kids2",
+          "time": "16:00 - 17:30"
+        },
+        {
+          "abteilung": "Fußball",
+          "name": "1. und 2. Mannschaft",
+          "time": "17:30 - 20:30"
+        },
+        {
+          "abteilung": "Stockschießen",
+          "name": "Herren",
+          "time": "18:30 - 21:00"
+        },
+        {
+          "abteilung": "Volleyball",
+          "name": "Boindara Bulln",
+          "time": "20:30 - 22:00"
+        }
+      ]
+    },
+    {
+      "name": "Samstag",
+      "events": [
+      {
+          "abteilung": "Turnen",
+          "name": "Hula Hoop",
+          "time": "10:00 - 11:00"
+        },
+        {
+          "abteilung": "Turnen",
+          "name": "Kids-Dance",
+          "time": "13:30 - 14:30"
+        }
+      ]
+    }
+  ]
